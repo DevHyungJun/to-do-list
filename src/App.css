@@ -1,38 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap');
+
+body{margin: 0; padding: 5px;}
+div{box-sizing: border-box;}
+
 .App {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.bg {
+  width: 100%;
+  min-height: 100%;
+  margin: auto;
+  border-radius: 6px;
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.title {
+  text-align: center;
+  color: black;
+  font-size: 3rem;
+  margin-top: 0;
+  font-family: 'Nanum Myeongjo', serif;
+}
+
+input{
+  width: 100px;
+  transition: 0.4s width;
+  padding: 3px;
+  border-top: none;
+  border-right: none;
+  border-bottom: 1px solid rgb(139, 134, 134);
+  border-left: none;
+  border-radius: 2px;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  outline: none;
+  margin-bottom: 30px;
+  font-size: 1.3rem;
+  font-family: 'Noto Sans KR', sans-serif;
+}
+input:focus{
+  width: 200px;
+}
+
+.btn{
+  border-radius: 2px;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border: 0;
+  color: rgb(106, 102, 102);
+  font-size: 1rem;
+  font-family: 'Noto Sans KR', sans-serif;
+  height: 100%;
+}
+.btn:hover {
+  background-color: #cfcdcd;
+}
+.remove {
+  border-radius: 2px;
+  padding-top: 5px;
+  
+}
+.form {
+  margin: auto;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.textBg {
+  background-color: #f0f0f0;
+  width: 80%;
+  margin: auto;
+  margin-top: 3px;
+  margin-bottom: 4px;
+  border-radius: 2px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sub-title {
+  text-align: center;
+  color: black;
+  font-size: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.content {
+  color: black;
+  margin-left: 5px;
+  font-size: 1.3rem;
 }
 
-.App-link {
-  color: #61dafb;
+.darkmode {
+  background-color: #212529;
+  color: rgb(153, 150, 150);
+}
+.darkBg {
+  border: 1px solid rgb(153, 150, 150);
+}
+.darkbtnbackground {
+  background-color: #18191a;
+}
+.darkbtnbackground:hover {
+  background-color: #121111;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.darkcontentbackground {
+  background-color: #18191a;
+}
+
+.darkbtn:hover {
+  background-color: #121111;
+}
+
+.mar {
+  margin-top: 20px;
 }
